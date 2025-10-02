@@ -1,0 +1,14 @@
+site_name: Edzhulaj's Static Site
+site_description: "Задание 2.2. Кастомизация статического сайта (шаблонизация, сборка статики: HTML, CSS, JS)"
+site_author: "Евгений Джулай"
+
+theme:
+  name: null
+  custom_dir: theme
+
+extra_css:
+  - assets/styles.css
+
+nav:
+  - Главная: index.md
+  - Отчёт: report.md

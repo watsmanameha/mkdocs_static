@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru" data-build="{{ build_date|default('', true) }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ config.site_name }}</title>
+
+  <!-- Метаданные сайта -->
+  <meta name="description" content="{{ config.site_description }}">
+  <meta name="author" content="{{ config.site_author }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph для предпросмотров -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }} | {{ config.site_name }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+
+  <link rel="stylesheet" href="{{ base_url }}/assets/styles.css">
+</head>
+<body>
+    <header class="site-header">
+      <div class="container flex items-center justify-between">
+        <a class="brand text-sky-300 text-lg md:text-xl" href="{{ base_url }}/">{{ config.site_name }}</a>
+        <nav class="flex items-center space-x-4 text-sky-200">
+          <a class="hover:text-sky-300" href="{{ base_url }}/">Главная</a>
+          <a class="hover:text-sky-300" href="{{ base_url }}/report/">Отчёт</a>
+          <a class="hover:text-sky-300" href="https://github.com/watsmanameha/mkdocs_static" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container py-16">
+      <div class="max-w-3xl mx-auto content">
+        {{ page.content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="mx-auto max-w-3xl text-center text-sm text-gray-400">© {{ config.site_author }} — {{ config.site_name }}</div>
+      </div>
+    </footer>
+
+  <script src="{{ base_url }}/assets/app.js" defer></script>
+</body>
+</html>
