@@ -1,0 +1,31 @@
+# Git
+.git
+.github
+.gitignore
+
+# Node
+node_modules
+npm-debug.log
+
+# Build output
+site
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+.Python
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs
+README.MD

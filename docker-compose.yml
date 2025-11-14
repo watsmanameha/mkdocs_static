@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: ${DOCKERHUB_USERNAME}/mkdocs-static:latest
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    container_name: mkdocs-static-site
